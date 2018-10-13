@@ -1,6 +1,7 @@
 body {
     margin: 0%;
     font-family: 'Slabo 27px', serif;
+    overflow-y: scroll;
 }
 #title {
     padding-top: 20px;
