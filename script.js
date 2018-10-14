@@ -15,28 +15,3 @@ function rainbow(id) {
     setColor(i);
 
 }
-
-
-// xd();
-
-// function xd() {
-//     console.log("xdxdxd");
-// }
-
-// //output= "xdxdxd"
-
-// mark();
-
-// const mark = () => {
-//     console.log("mark est attardé");
-// }
-
-// //output: mark n'est pas définie
-
-// const mark = () => {
-//     console.log("mark est une grosse merde");
-// }
-
-// mark();
-
-// //output : "mark est une grosse merde";
