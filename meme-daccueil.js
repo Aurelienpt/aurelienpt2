@@ -3,6 +3,7 @@
 const url = "https://www.reddit.com/r/me_irl/hot.json?limit=1";
 const contenu = document.getElementById("meme");
 
+console.log("start");
 fetch(url).then(response => {
     response.json().then(data => {
         // console.log(data);
@@ -12,3 +13,4 @@ fetch(url).then(response => {
         contenu.src = meme;
     })
 })
+console.log("end");
