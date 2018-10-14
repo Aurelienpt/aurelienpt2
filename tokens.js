@@ -10,8 +10,12 @@ fetch(url).then(response => {
             const token = payload[i].token;
             const name = payload[i].bot_username;
             const span = document.createElement('span');
+            const gras = document.createElement('span')
             const BoT = document.createElement('br');
-            span.innerHTML = name + " " + token;
+            gras.style = "font-weight: bold;"
+            gras.innerHTML = name;
+            span.innerHTML = " : " + token;
+            tokensContainer.append(gras)
             tokensContainer.append(span)
             tokensContainer.append(BoT)
         }
