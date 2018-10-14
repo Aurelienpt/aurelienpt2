@@ -15,3 +15,5 @@ function rainbow(id) {
     setColor(i);
 
 }
+
+// On va choper le best content
