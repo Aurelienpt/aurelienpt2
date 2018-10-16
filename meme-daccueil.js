@@ -8,8 +8,8 @@ fetch(url).then(response => {
     response.json().then(data => {
         // console.log(data);
         const meme = data.data.children[1].data.url;
-        console.log(meme);
-        console.dir(contenu);
+        // console.log(meme);
+        // console.dir(contenu);
         contenu.src = meme;
     })
 })
