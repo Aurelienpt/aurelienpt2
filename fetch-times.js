@@ -15,16 +15,32 @@ fetch(lien).then(response => {
         for (let i = 0; i < containers.length; i++) {
             const container = containers[i];
             const span = document.createElement('span');
-            const name = container.childNodes[1].innerHTML;
+            const span2 = document.createElement('span');
+            const name = container.childNodes[1].innerText;
             let status;
 
             if (container.childNodes[3]) {
-                status = container.childNodes[3].innerHTML;
+                status = container.childNodes[3].innerText;
             }
-            console.log(name, status);
-            span.innerHTML = name + " " + status;
+            // console.log(name);
+            // console.log(status);
+
+            if(typeof name === "undefined" || name === "" || typeof status === "undefined" ||status === "") {
+
+                continue;
+
+            } else {
+
+            span.innerHTML = "<strong>" + name + "</strong>" + " ";
             print.append(span);
+            span2.innerHTML = status + "<br/><hr/>"
+            span2.classList.add("temps-attraction");
+            print.append(span2);
+            }
+
+            console.log("sauté");
+
         }
-        div.innerHTML = ""
+        div.innerHTML = "";
     })
 });

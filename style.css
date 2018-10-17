@@ -1,3 +1,8 @@
+
+@font-face {
+    font-family: "digital";
+    src: url("digital.TTF");
+}
 body {
     margin: 0%;
     font-family: 'Slabo 27px', serif;
@@ -84,4 +89,10 @@ a:hover {
 
 .like:hover {
     color: royalblue;
+}
+
+.temps-attraction {
+    background-color: black;
+    color: yellow;
+    font-family: "digital";
 }
