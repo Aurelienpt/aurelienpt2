@@ -1,3 +1,3 @@
-# Personnal Website (fr)
+# (OLD) Personnal Website (fr)
 
-https://aurelienpt.netlify.com/
+https://aurelienpt.netlify.app/
